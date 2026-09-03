@@ -1,0 +1,14 @@
+prover/src/circuit.rs:74:    builder.register_public_input(compromised.target);
+prover/src/circuit.rs:75:    builder.register_public_input(shadow.target);
+prover/src/circuit.rs:76:    builder.register_public_input(tmp_exec.target);
+prover/src/circuit.rs:77:    builder.register_public_input(outbound.target);
+prover/src/circuit.rs:78:    builder.register_public_input(kernel.target);
+prover/src/circuit.rs:79:    builder.register_public_input(net_flap.target);
+prover/src/circuit.rs:121:        "VERDICT:{}",
+backend/services/jobQueue.js:95://       // VERDICT
+backend/services/jobQueue.js:96://       if (s.includes('VERDICT:')) {
+backend/services/jobQueue.js:98://           const j = JSON.parse(s.split('VERDICT:')[1]);
+backend/services/jobQueue.js:234:        // VERDICT (MOST IMPORTANT)
+backend/services/jobQueue.js:235:        if (s.startsWith('VERDICT:')) {
+backend/services/jobQueue.js:237:            const verdict = JSON.parse(s.replace('VERDICT:', ''));
+backend/services/jobQueue.js:252:            console.error('Failed to parse VERDICT:', e);

@@ -1,0 +1,6 @@
+74:    builder.register_public_input(compromised.target);
+75:    builder.register_public_input(shadow.target);
+76:    builder.register_public_input(tmp_exec.target);
+77:    builder.register_public_input(outbound.target);
+78:    builder.register_public_input(kernel.target);
+79:    builder.register_public_input(net_flap.target);

@@ -1,0 +1,17 @@
+//         // Opt::Verify { proof } => {
+//         //     // let data = circuit::load_circuit_data()?; // however you store it
+//         //     let proof = data.load_proof(&proof)?;
+        
+//         //     data.verify(proof.clone())?;
+--
+//         Opt::Verify { proof } => {
+//             println!("VERIFY stub: {}", proof.display());
+//             Ok(())
+//         }
+        
+--
+        Opt::Verify { proof } => {
+            println!("VERIFY stub: {}", proof.display());
+            Ok(())
+        }
+    }
