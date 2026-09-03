@@ -1,0 +1,48 @@
+No files changed, compilation skipped
+
+Ran 10 tests for test/ForensiZKScenarios.t.sol:ForensiZKScenarios
+[PASS] test_Scenario_BelowBruteForceThreshold() (gas: 7953)
+[PASS] test_Scenario_BruteForceOnly() (gas: 7926)
+[PASS] test_Scenario_CleanLogin() (gas: 7974)
+[PASS] test_Scenario_ExactlyAtBruteForceThreshold() (gas: 7969)
+[PASS] test_Scenario_FullAttack() (gas: 7876)
+[PASS] test_Scenario_KernelFaultOnly() (gas: 7893)
+[PASS] test_Scenario_NetFlapOnly() (gas: 7950)
+[PASS] test_Scenario_ReverseShell() (gas: 7962)
+[PASS] test_Scenario_ShadowAndKernel() (gas: 7909)
+[PASS] test_Scenario_TmpExecOnly() (gas: 7913)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 1.22ms (374.11µs CPU time)
+
+Ran 8 tests for test/ForensiZKCircuit.t.sol:ForensiZKCircuitTest
+[PASS] testFuzz_BitDecompositionConsistency(uint8) (runs: 10000, μ: 8723, ~: 8723)
+[PASS] testFuzz_CleanSystemAlwaysClean(uint8) (runs: 10000, μ: 11090, ~: 11090)
+[PASS] testFuzz_CompromisedIfAndOnlyIfAnyFlag(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 9100, ~: 9095)
+[PASS] testFuzz_NoFalseNegatives(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 9053, ~: 9049)
+[PASS] testFuzz_NoFalsePositives(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 8960, ~: 8952)
+[PASS] test_EachFlagAloneTriggers() (gas: 23862)
+[PASS] test_SSHOverflowSafety() (gas: 10228)
+[PASS] test_SSHThresholdBoundary() (gas: 33449)
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 893.31ms (2.55s CPU time)
+
+╭----------------------------------------------------+-----------------+------+--------+------+---------╮
+| src/ForensiZKCircuit.sol:ForensiZKCircuit Contract |                 |      |        |      |         |
++=======================================================================================================+
+| Deployment Cost                                    | Deployment Size |      |        |      |         |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| 266572                                             | 1017            |      |        |      |         |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+|                                                    |                 |      |        |      |         |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| Function Name                                      | Min             | Avg  | Median | Max  | # Calls |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| SSH_BITS                                           | 331             | 331  | 331    | 331  | 1       |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| SSH_BRUTE_THRESHOLD                                | 397             | 397  | 397    | 397  | 1       |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| bitDecompositionConsistent                         | 2796            | 2796 | 2796   | 2796 | 256     |
+|----------------------------------------------------+-----------------+------+--------+------+---------|
+| evaluate                                           | 1582            | 1590 | 1582   | 1607 | 1050    |
+╰----------------------------------------------------+-----------------+------+--------+------+---------╯
+
+
+Ran 2 test suites in 960.59ms (894.53ms CPU time): 18 tests passed, 0 failed, 0 skipped (18 total tests)

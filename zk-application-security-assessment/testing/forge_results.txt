@@ -1,0 +1,27 @@
+No files changed, compilation skipped
+
+Ran 10 tests for test/ForensiZKScenarios.t.sol:ForensiZKScenarios
+[PASS] test_Scenario_BelowBruteForceThreshold() (gas: 7953)
+[PASS] test_Scenario_BruteForceOnly() (gas: 7926)
+[PASS] test_Scenario_CleanLogin() (gas: 7974)
+[PASS] test_Scenario_ExactlyAtBruteForceThreshold() (gas: 7969)
+[PASS] test_Scenario_FullAttack() (gas: 7876)
+[PASS] test_Scenario_KernelFaultOnly() (gas: 7893)
+[PASS] test_Scenario_NetFlapOnly() (gas: 7950)
+[PASS] test_Scenario_ReverseShell() (gas: 7962)
+[PASS] test_Scenario_ShadowAndKernel() (gas: 7909)
+[PASS] test_Scenario_TmpExecOnly() (gas: 7913)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 4.60ms (4.54ms CPU time)
+
+Ran 8 tests for test/ForensiZKCircuit.t.sol:ForensiZKCircuitTest
+[PASS] testFuzz_BitDecompositionConsistency(uint8) (runs: 10000, μ: 8723, ~: 8723)
+[PASS] testFuzz_CleanSystemAlwaysClean(uint8) (runs: 10000, μ: 11090, ~: 11090)
+[PASS] testFuzz_CompromisedIfAndOnlyIfAnyFlag(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 9100, ~: 9095)
+[PASS] testFuzz_NoFalseNegatives(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 9053, ~: 9049)
+[PASS] testFuzz_NoFalsePositives(uint8,bool,bool,bool,bool,bool) (runs: 10000, μ: 8960, ~: 8952)
+[PASS] test_EachFlagAloneTriggers() (gas: 23862)
+[PASS] test_SSHOverflowSafety() (gas: 10228)
+[PASS] test_SSHThresholdBoundary() (gas: 33449)
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 845.78ms (2.59s CPU time)
+
+Ran 2 test suites in 847.85ms (850.38ms CPU time): 18 tests passed, 0 failed, 0 skipped (18 total tests)
